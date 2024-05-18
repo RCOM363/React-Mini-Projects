@@ -1,12 +1,14 @@
 import { useCallback, useEffect, useState } from "react";
 import ColorPalette from "./components/ColorPalette";
 
+
 function App() {
 
   const [colors,setColors] = useState([]);
   const [paletteSize,setPaletteSize] = useState(5);
   const [lockedStatus,setLockedStatus] = useState(Array.from({length:paletteSize},()=>{return false}));
 
+  // func to generate color
   const generateColor = useCallback(() => {
     const hex = "0123456789ABCDEF";
     let hexColor = "#";
@@ -17,6 +19,7 @@ function App() {
     return hexColor;
   },[]);
 
+  // toggling lock/unlock
   const toggleLock = (index) => {
     setLockedStatus((prevLockedStatus) => {
       const newLockedStatus = [...prevLockedStatus];
@@ -25,6 +28,7 @@ function App() {
     });
   }
 
+  // func to generate color palette
   const generateColorPalette = () => {
     let newColors = [];
     for (let i=0;i<paletteSize;i++){
@@ -37,6 +41,7 @@ function App() {
     setColors(newColors);
   };
 
+  // generating color palette using spacebar
   document.body.onkeyup = (e) => {
     if (e.key === "Space" || e.key === " "){
       e.preventDefault();
@@ -50,8 +55,11 @@ function App() {
 
   return (
     <>
-      <div className="w-[50em] border-black border-[3px] mx-auto p-3">
-        <input type="range" min={2} max={10} value={paletteSize} onChange={(e)=> setPaletteSize(e.target.value)}/>
+      <div className="bg-white w-[77em] mx-auto flex flex-col justify-center p-5">
+        <h1 className="text-center text-3xl font-semibold">Color Palette Generator</h1>
+        <label>Palette size : <span className="font-semibold">{paletteSize}</span></label>
+        <input className=" w-[10em] accent-black" type="range" min={2} max={10} value={paletteSize} onChange={(e)=> setPaletteSize(e.target.value)}/>
+        <h3 className="text-center my-3 text-xl">Hit Spacebar to generate colors</h3>
         <div className="grid grid-cols-5">
         {
           colors && colors.length>0 &&
@@ -60,7 +68,6 @@ function App() {
           ))
         }
         </div>
-        <h3>Hit Spacebar to generate color</h3>
       </div>
     </>
   );
