@@ -7,7 +7,7 @@ const Accordion = () => {
     const [multipleSelection,setMultipleSelection] = useState([]); 
     const [mulSel,setMulSel] = useState(false);
 
-    const handleSingleClick = (itemId) => {
+    const handleSingleSelection = (itemId) => {
         setSingleSelected(singleSelection===itemId?null:itemId);
         // expands the selected item, collapses if it is already selected (toggle)
     }
@@ -33,7 +33,7 @@ const Accordion = () => {
       {
         data && data.length > 0 &&
         data.map((item)=>(
-            <div key={item.id} onClick={mulSel?()=>handleMultipleSelection(item.id):()=>handleSingleClick(item.id)} className='  basis-full p-3 cursor-pointer bg-white'>
+            <div key={item.id} onClick={mulSel?()=>handleMultipleSelection(item.id):()=>handleSingleSelection(item.id)} className= 'basis-full p-3 cursor-pointer bg-white'>
                 <div className=' flex justify-between items-center p-2 '>
                   <h3 className=' inline font-semibold'>{item.question}</h3>
                   <span className='font-bold text-xl text-white text-center w-8 bg-purple-400 p-1'>
@@ -46,10 +46,10 @@ const Accordion = () => {
                 <div>
                   {
                     mulSel? multipleSelection.indexOf(item.id) !== -1 && (
-                      <div className=' p-2'>{item.answer}</div>
+                      <div className=' p-2 '>{item.answer}</div>
                     ):
                     singleSelection === item.id && (
-                      <div className=' p-2'>{item.answer}</div>
+                      <div className=' p-2 '>{item.answer}</div>
                     )
                   }
                 </div>
