@@ -8,3 +8,13 @@ Welcome to my React Mini Projects Repository! This is where I store all the smal
 
 - [Accordion](https://github.com/RCOM363/React-Mini-Projects/tree/main/accordion#readme)
 - [Color Palette Generator](https://github.com/RCOM363/React-Mini-Projects/tree/main/colorPaletteGenerator#readme)
+
+## Getting Started
+
+To run any of these projects locally, follow these steps:
+
+1. Clone this repository to your local machine: git clone <repository-url>
+2. Navigate to the project directory you're interested in: cd project-name
+3. Install dependencies: npm install
+4. Start the development server: npm run dev
+5. Open your browser and visit http://localhost:3000/ to view the project.
