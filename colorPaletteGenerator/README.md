@@ -7,7 +7,7 @@ As the name suggest this is simple color palette generator, where the user can g
 - Generate random colors in hex format.
 - Selete color palette size.
 - Lock/unlock color in within the palette
-- Copy hex codes of the color
+- Copy hex codes of the color (toast for visual feedback)
 
 ## Demo
 
@@ -24,4 +24,5 @@ Visit my following social media handles to view project demo
 ## Resources used
 
 - Followed this youtube tutorial to built the project : [Day 15 - Color Palette Generator - 30 Days of React Challenge with Codedamn Certificate](https://youtu.be/O7oH5hncTfc?si=6mnaH3aYbIe9ljrS)
+- For toasts : [react-toastify](https://github.com/fkhadra/react-toastify#readme)
 - [Background Image](https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg)
