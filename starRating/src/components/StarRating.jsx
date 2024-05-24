@@ -5,9 +5,6 @@ function StarRating({noOfStars = 5}) {
     const [rating,setRating] = useState(0);
     const [hover,setHover] = useState(0);
 
-    const handleRating = (index) => {
-      setRating(index);
-    }
 
     const handleClick = (index) => {
       setRating(index);
@@ -24,7 +21,11 @@ function StarRating({noOfStars = 5}) {
   return (
     <>
         <div className='flex flex-wrap text-center justify-center items-center gap-1'>
-        <span className=' text-md basis-full text-gray-500'>Rate the movie: <b className=' text-yellow-400'>{`${rating}/${noOfStars}`}</b></span>
+        <span className=' text-base basis-full text-gray-500'>Rate the movie:
+        {
+          rating==1?"😑":rating==2?"😄":rating==3?"😁":rating==4?"😃":rating==5?"🤩":" "
+        }
+        </span>
         
         {
           [...Array(noOfStars)].map((_,index)=>{
