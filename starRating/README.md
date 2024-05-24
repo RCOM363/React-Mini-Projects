@@ -12,8 +12,8 @@ This is a star rating component built with React. It allows users to rate items 
 
 Visit my following social media handles to view project demo
 
-- [Twitter](https://x.com/RCOM363/status/1789709952497643566)
-- [LinkedIn](https://www.linkedin.com/posts/rahul-lankeppanavar-bb3260264_react-learninpublic-github-activity-7195479807164358656-H_xn?utm_source=share&utm_medium=member_desktop)
+- [Twitter](https://x.com/RCOM363/status/1794053166369239059)
+- [LinkedIn](https://www.linkedin.com/posts/rahul-lankeppanavar-bb3260264_reactjs-learninpublic-webdevelopment-activity-7199818262472245248-dQLd?utm_source=share&utm_medium=member_desktop)
 
 ## Technologies used
 
