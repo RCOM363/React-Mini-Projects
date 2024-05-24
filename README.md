@@ -8,6 +8,7 @@ Welcome to my React Mini Projects Repository! This is where I store all the smal
 
 - [Accordion](https://github.com/RCOM363/React-Mini-Projects/tree/main/accordion#readme)
 - [Color Palette Generator](https://github.com/RCOM363/React-Mini-Projects/tree/main/colorPaletteGenerator#readme)
+- [Star Rating](https://github.com/RCOM363/React-Mini-Projects/tree/main/starRating#readme)
 
 ## Getting Started
 
