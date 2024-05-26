@@ -11,8 +11,8 @@ This is an image slider component built with React. It allows users to view a se
 
 Visit my following social media handles to view project demo
 
-- [Twitter](https://x.com/RCOM363/status/1789709952497643566)
-- [LinkedIn](https://www.linkedin.com/posts/rahul-lankeppanavar-bb3260264_react-learninpublic-github-activity-7195479807164358656-H_xn?utm_source=share&utm_medium=member_desktop)
+- [Twitter](https://x.com/RCOM363/status/1794739603339166048)
+- [LinkedIn](https://www.linkedin.com/posts/rahul-lankeppanavar-bb3260264_reactjs-webdevelopment-coding-activity-7200504692748009472-8cIx?utm_source=share&utm_medium=member_desktop)
 
 ## Technologies used
 
