@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { IoStar } from "react-icons/io5";
 
 //passing noOfStars as props, by default takes 5
+// eslint-disable-next-line react/prop-types
 function StarRating({noOfStars = 5}) {
     const [rating,setRating] = useState(0);
     const [hover,setHover] = useState(0);
@@ -29,6 +30,7 @@ function StarRating({noOfStars = 5}) {
         </span>
         
         {
+          //creating an array of size "noOfStars"
           [...Array(noOfStars)].map((_,index)=>{
             index+=1;
             return(
