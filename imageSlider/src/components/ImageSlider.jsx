@@ -9,6 +9,7 @@ function ImageSlider({url,page,limit}) {
     const [loading,setLoading] = useState(false);
     const [errorMsg,setErrorMsg] = useState(null);
     
+    // fetch images 
     async function fetchImages(getUrl){
         try{
             setLoading(true);
@@ -37,6 +38,7 @@ function ImageSlider({url,page,limit}) {
 
   
     useEffect(()=>{
+      // automatic sliding
       const interval = setInterval(()=>{
         handleNext();
       },3000);
@@ -60,6 +62,7 @@ function ImageSlider({url,page,limit}) {
       <IoIosArrowBack size={50} className=' absolute left-8 bottom-[18em] text-white'
         onClick={handlePrevious}
       />
+      {/*images */}
       {
         images && images.length?
         images.map((image,index)=>(
@@ -69,6 +72,7 @@ function ImageSlider({url,page,limit}) {
         ))
         :null
       }
+      {/*slide indicators */}
       <span className=' w-[25em] absolute left-0 right-0 bottom-5 mx-auto flex justify-evenly items-center p-1 '>
         {
           images && images.length ?
